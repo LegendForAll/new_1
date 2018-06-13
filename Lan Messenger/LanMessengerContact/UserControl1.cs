@@ -67,7 +67,7 @@ namespace LanMessengerControls
             // picSmiley
             // 
             this.picSmiley.BackColor = System.Drawing.Color.Transparent;
-            this.picSmiley.Location = new System.Drawing.Point(14, 20);
+            this.picSmiley.Location = new System.Drawing.Point(13, 20);
             this.picSmiley.Name = "picSmiley";
             this.picSmiley.Size = new System.Drawing.Size(16, 16);
             this.picSmiley.TabIndex = 0;
@@ -78,11 +78,11 @@ namespace LanMessengerControls
             // 
             // txtContact
             // 
-            this.txtContact.Font = new System.Drawing.Font("Sitka Banner", 10F);
+            this.txtContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.txtContact.ForeColor = System.Drawing.Color.Gray;
-            this.txtContact.Location = new System.Drawing.Point(37, 20);
+            this.txtContact.Location = new System.Drawing.Point(45, 20);
             this.txtContact.Name = "txtContact";
-            this.txtContact.Size = new System.Drawing.Size(144, 16);
+            this.txtContact.Size = new System.Drawing.Size(128, 16);
             this.txtContact.TabIndex = 1;
             this.txtContact.Text = "Contact";
             this.txtContact.DoubleClick += new System.EventHandler(this.txtContact_DoubleClick);

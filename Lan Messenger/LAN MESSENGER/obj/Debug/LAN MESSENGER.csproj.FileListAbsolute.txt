@@ -348,7 +348,6 @@ D:\GITHUB\demo_soon\Lan Messenger\LAN MESSENGER\obj\Debug\Lan_Messenger.Form1.re
 D:\GITHUB\demo_soon\Lan Messenger\LAN MESSENGER\obj\Debug\Lan_Messenger.FormAbout.resources
 D:\GITHUB\demo_soon\Lan Messenger\LAN MESSENGER\obj\Debug\Lan_Messenger.FormAddContact.resources
 D:\GITHUB\demo_soon\Lan Messenger\LAN MESSENGER\obj\Debug\Lan_Messenger.FormChangePassword.resources
-D:\GITHUB\demo_soon\Lan Messenger\LAN MESSENGER\obj\Debug\Lan_Messenger.FormCreateAccount.resources
 D:\GITHUB\demo_soon\Lan Messenger\LAN MESSENGER\obj\Debug\Lan_Messenger.FormMessage.resources
 D:\GITHUB\demo_soon\Lan Messenger\LAN MESSENGER\obj\Debug\Lan_Messenger.FormNetworkSettings.resources
 D:\GITHUB\demo_soon\Lan Messenger\LAN MESSENGER\obj\Debug\Lan_Messenger.FormOfflineMessages.resources

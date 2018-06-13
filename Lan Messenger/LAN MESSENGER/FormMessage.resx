@@ -147,16 +147,16 @@
   </metadata>
   <data name="picBuzz.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAABbwAAAW8AZvuyVIAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAABr0lEQVRIS7WVsUoDQRCGz0YtRCwERUGwFksJ5jZhsfJyt8Emr2DlA9hoow9gsBHxFUxrGn0FQbBS
-        CWiyG6MpDQQC58zBhr29CcRkLb7L7T///nNsbm+9OI4zSMGXlcjvyBLbb3A+T3mQ58rWrIoYb5eK250K
-        X6A8qUEr9MtSMCkjFht0gYtukFvUvsYBXwKtKqPCt+GLZeg3lPADMzO5vATBnAzZTcqc5fGznFvplPgq
-        PMQTUTe5xsxhAyUKp4Qpi2Cv8PuW0QlU6J8kDdqiuAlCzzY44AceaMNTUeGSKLqiCm8MeyAKTmhF/r0H
-        N0274JAmNviyRJd84RLdEgU3QLYH63REFh2A2d5HtLsOg/94TXuYnWw02MXnhGFazoY7GT9UICjLMA1K
-        f/ySBgjs6D0oDCzjJAwwS+cOGyDwrx8TE/4GZJiZqQYwnAFTLTNpfGqYYWamGwB4wICxbk0chzp1OKUG
-        mgmakOFIRtAkTQS7I8LSgGdUOEKKGjxzYY9ckcEI1NBDzdWQog0EHUJg3wjvo0Z5bUiRohUW87AcEsF7
-        ykNBiqN4L/trCFWjib1frOGZxN6aFaYAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAF
+        vAAABbwBm+7JUgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGvSURBVEhLtZWx
+        SgNBEIbPRi1ELARFQbAWSwnmNmGx8nK3wSavYOUD2GijD2CwEfEVTGsafQVBsFIJaLIboykNBALnzMGG
+        vb0JxGQtvsvtP//+c2xub704jjNIwZeVyO/IEttvcD5PeZDnytasihhvl4rbnQpfoDypQSv0y1IwKSMW
+        G3SBi26QW9S+xgFfAq0qo8K34Ytl6DeU8AMzM7m8BMGcDNlNypzl8bOcW+mU+Co8xBNRN7nGzGEDJQqn
+        hCmLYK/w+5bRCVTonyQN2qK4CULPNjjgBx5ow1NR4ZIouqIKbwx7IApOaEX+vQc3TbvgkCY2+LJEl3zh
+        Et0SBTdAtgfrdEQWHYDZ3ke0uw6D/3hNe5idbDTYxeeEYVrOhjsZP1QgKMswDUp//JIGCOzoPSgMLOMk
+        DDBL5w4bIPCvHxMT/gZkmJmpBjCcAVMtM2l8aphhZqYbAHjAgLFuTRyHOnU4pQaaCZqQ4UhG0CRNBLsj
+        wtKAZ1Q4QooaPHNhj1yRwQjU0EPN1ZCiDQQdQmDfCO+jRnltSJGiFRbzsBwSwXvKQ0GKo3gv+2sIVaOJ
+        vV+s4ZnE3poVpgAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="picBuzz.InitialImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

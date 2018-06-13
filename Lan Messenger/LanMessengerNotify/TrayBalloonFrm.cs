@@ -157,9 +157,6 @@ namespace TrayBalloon
             "\\<a\\W+href=\"(?<href>[^\"]*)\"\\W*\\>(?<text>[^\\<]*)\\</a\\>", System.Text.RegularExpressions.RegexOptions.IgnoreCase | System.Text.RegularExpressions.RegexOptions.Multiline);
         private void SetupText()
         {
-            //TitleLabel.Text = Title;
-            //TitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //TitleLabel.ForeColor = ForeColor = System.Drawing.Color.Blue;
             string msg = Message ?? string.Empty;
 
             var matches = A.Matches(msg);
@@ -198,13 +195,8 @@ namespace TrayBalloon
 
             SetupText();
 
-            //Width = 200;
-            //Height = 60;
             Width = 400;
             Height = 100;
-            //Location = new Point(
-            //    Screen.PrimaryScreen.Bounds.Width - Width,
-            //    Screen.PrimaryScreen.Bounds.Height - Height * (1 + StartingOffsetIndex) + ((StartingOffsetIndex == 0) ? 0 : (Screen.PrimaryScreen.WorkingArea.Height - Screen.PrimaryScreen.Bounds.Height)));
 
             OpacityStep = (float)(((float)SystemInformation.WorkingArea.Height / (float)SystemInformation.VirtualScreen.Height) / 10.0);
 

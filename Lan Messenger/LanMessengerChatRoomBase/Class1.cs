@@ -23,7 +23,7 @@ namespace LanMessengerChatRoomBase
             else
             {
                 alOnlineUser.Add(name);
-                SendMsgToSvr(name + " đã tham gia phòng chat!");
+                SendMsgToSvr(name + " in group!");
                 return true;
             }
 
@@ -33,7 +33,7 @@ namespace LanMessengerChatRoomBase
         public void LeaveChatRoom(string name)
         {
             alOnlineUser.Remove(name);
-            SendMsgToSvr(name + " đã rời khỏi phòng chat!");
+            SendMsgToSvr(name + " out group!");
         }
         
         // Những contact đang online

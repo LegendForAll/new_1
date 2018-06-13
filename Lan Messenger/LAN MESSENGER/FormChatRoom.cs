@@ -45,11 +45,8 @@ namespace Lan_Messenger
                     key++;
                     txtAllChat.Text = txtAllChat.Text + "\n" + tempStr;
                 }
-                //Download source code FREE tai Sharecode.vn
-                //if (skipCounter > 3)
                 {
                     onlineUser = remoteObj.GetOnlineUser();
-                    lstOnlineUser.DataSource = onlineUser;
                     skipCounter = 0;
 
                     if (onlineUser.Count < 2)

@@ -63,10 +63,8 @@
             this.panel_Button = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.pic_ortherSet = new System.Windows.Forms.PictureBox();
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -94,7 +92,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picPlaybuzz)).BeginInit();
             this.panel_Button.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_ortherSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -438,10 +435,8 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.pic_ortherSet);
             this.panel2.Controls.Add(this.bunifuSeparator3);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label11);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 15);
             this.panel2.Name = "panel2";
@@ -456,16 +451,6 @@
             this.label8.Size = new System.Drawing.Size(40, 13);
             this.label8.TabIndex = 10;
             this.label8.Text = "Setting";
-            // 
-            // pic_ortherSet
-            // 
-            this.pic_ortherSet.Image = ((System.Drawing.Image)(resources.GetObject("pic_ortherSet.Image")));
-            this.pic_ortherSet.Location = new System.Drawing.Point(487, 10);
-            this.pic_ortherSet.Name = "pic_ortherSet";
-            this.pic_ortherSet.Size = new System.Drawing.Size(15, 16);
-            this.pic_ortherSet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_ortherSet.TabIndex = 26;
-            this.pic_ortherSet.TabStop = false;
             // 
             // bunifuSeparator3
             // 
@@ -488,15 +473,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(508, 13);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 13);
-            this.label11.TabIndex = 25;
-            this.label11.Text = "Other settings";
             // 
             // panel1
             // 
@@ -733,7 +709,6 @@
             this.panel_Button.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_ortherSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -785,10 +760,8 @@
         private System.Windows.Forms.Panel panel_Button;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pic_ortherSet;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox7;

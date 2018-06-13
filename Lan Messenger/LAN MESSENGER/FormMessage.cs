@@ -49,6 +49,7 @@ namespace Lan_Messenger
         FormPhotoReceive fm;
         private ToolTip toolTip4;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
+        private RadioButton rbtn_opacity;
         private Panel panel1;
 		public FormMessage()
 		{
@@ -177,6 +178,7 @@ namespace Lan_Messenger
             this.toolTip4 = new System.Windows.Forms.ToolTip(this.components);
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rbtn_opacity = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.picBuzz)).BeginInit();
             this.PanelFormMessage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picWebcam)).BeginInit();
@@ -259,6 +261,7 @@ namespace Lan_Messenger
             // 
             // PanelFormMessage
             // 
+            this.PanelFormMessage.Controls.Add(this.rbtn_opacity);
             this.PanelFormMessage.Controls.Add(this.picWebcam);
             this.PanelFormMessage.Controls.Add(this.picSharePhoto);
             this.PanelFormMessage.Controls.Add(this.picSendFile);
@@ -365,6 +368,18 @@ namespace Lan_Messenger
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(302, 33);
             this.panel1.TabIndex = 14;
+            // 
+            // rbtn_opacity
+            // 
+            this.rbtn_opacity.AutoSize = true;
+            this.rbtn_opacity.Location = new System.Drawing.Point(98, 11);
+            this.rbtn_opacity.Name = "rbtn_opacity";
+            this.rbtn_opacity.Size = new System.Drawing.Size(61, 17);
+            this.rbtn_opacity.TabIndex = 15;
+            this.rbtn_opacity.TabStop = true;
+            this.rbtn_opacity.Text = "Opacity";
+            this.rbtn_opacity.UseVisualStyleBackColor = true;
+            this.rbtn_opacity.CheckedChanged += new System.EventHandler(this.rbtn_opacity_CheckedChanged);
             // 
             // FormMessage
             // 
@@ -1181,6 +1196,16 @@ namespace Lan_Messenger
             }
             s = s + ".dat";
             return s;
+        }
+
+        private void rbtn_opacity_CheckedChanged(object sender, EventArgs e)
+        {
+            if(rbtn_opacity.Checked=true)
+            {
+                this.Opacity = .80;
+            }
+            else
+                this.Opacity = .100;
         }
     }
 }

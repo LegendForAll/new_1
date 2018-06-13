@@ -90,14 +90,14 @@ namespace Lan_Messenger
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private PictureBox pictureBox1;
         private Panel panel3;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private Button button5;
-        private Button button4;
-        private Button button6;
-        private Button button7;
-        private Button button8;
+        private Button btn_login;
+        private Button btn_Logchat;
+        private Button btn_addFriend;
+        private Button btn_link;
+        private Button btn_setting;
+        private Button btn_mess;
+        private Button btn_changePass;
+        private Button btn_group;
         private string[] setting = new string[6]; // Có 6 Options tất cả
 		public Form1()
 		{
@@ -233,19 +233,19 @@ namespace Lan_Messenger
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_group = new System.Windows.Forms.Button();
+            this.btn_changePass = new System.Windows.Forms.Button();
+            this.btn_mess = new System.Windows.Forms.Button();
+            this.btn_link = new System.Windows.Forms.Button();
+            this.btn_setting = new System.Windows.Forms.Button();
+            this.btn_login = new System.Windows.Forms.Button();
+            this.btn_Logchat = new System.Windows.Forms.Button();
+            this.btn_addFriend = new System.Windows.Forms.Button();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picSearch)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -434,7 +434,7 @@ namespace Lan_Messenger
             // 
             this.statusBar.Location = new System.Drawing.Point(0, 410);
             this.statusBar.Name = "statusBar";
-            this.statusBar.Size = new System.Drawing.Size(612, 22);
+            this.statusBar.Size = new System.Drawing.Size(542, 22);
             this.statusBar.TabIndex = 1;
             // 
             // conMenu
@@ -617,6 +617,7 @@ namespace Lan_Messenger
             this.picSearch.Location = new System.Drawing.Point(12, 5);
             this.picSearch.Name = "picSearch";
             this.picSearch.Size = new System.Drawing.Size(25, 25);
+            this.picSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picSearch.TabIndex = 4;
             this.picSearch.TabStop = false;
             this.picSearch.Click += new System.EventHandler(this.picSearch_Click);
@@ -669,14 +670,14 @@ namespace Lan_Messenger
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_group);
+            this.panel1.Controls.Add(this.btn_changePass);
+            this.panel1.Controls.Add(this.btn_mess);
+            this.panel1.Controls.Add(this.btn_link);
+            this.panel1.Controls.Add(this.btn_setting);
+            this.panel1.Controls.Add(this.btn_login);
+            this.panel1.Controls.Add(this.btn_Logchat);
+            this.panel1.Controls.Add(this.btn_addFriend);
             this.panel1.Controls.Add(this.rbtnInvisible);
             this.panel1.Controls.Add(this.rbtnOnline);
             this.panel1.Controls.Add(this.lblWelcome);
@@ -686,74 +687,120 @@ namespace Lan_Messenger
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(237, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(372, 410);
+            this.panel1.Size = new System.Drawing.Size(301, 410);
             this.panel1.TabIndex = 8;
             // 
-            // button5
+            // btn_group
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(166)))), ((int)(((byte)(90)))));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Silver;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(140, 197);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(92, 86);
-            this.button5.TabIndex = 42;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btn_group.BackColor = System.Drawing.Color.Tomato;
+            this.btn_group.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_group.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_group.ForeColor = System.Drawing.Color.Silver;
+            this.btn_group.Image = ((System.Drawing.Image)(resources.GetObject("btn_group.Image")));
+            this.btn_group.Location = new System.Drawing.Point(200, 95);
+            this.btn_group.Name = "btn_group";
+            this.btn_group.Size = new System.Drawing.Size(70, 66);
+            this.btn_group.TabIndex = 45;
+            this.btn_group.UseVisualStyleBackColor = false;
+            this.btn_group.Click += new System.EventHandler(this.btn_group_Click);
             // 
-            // button4
+            // btn_changePass
             // 
-            this.button4.BackColor = System.Drawing.Color.Turquoise;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.Silver;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(29, 197);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(92, 86);
-            this.button4.TabIndex = 41;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btn_changePass.BackColor = System.Drawing.Color.DarkGray;
+            this.btn_changePass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_changePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_changePass.ForeColor = System.Drawing.Color.Silver;
+            this.btn_changePass.Image = ((System.Drawing.Image)(resources.GetObject("btn_changePass.Image")));
+            this.btn_changePass.Location = new System.Drawing.Point(29, 259);
+            this.btn_changePass.Name = "btn_changePass";
+            this.btn_changePass.Size = new System.Drawing.Size(70, 66);
+            this.btn_changePass.TabIndex = 44;
+            this.btn_changePass.UseVisualStyleBackColor = false;
+            this.btn_changePass.Click += new System.EventHandler(this.btn_changePass_Click);
             // 
-            // button3
+            // btn_mess
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Silver;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(251, 197);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(92, 86);
-            this.button3.TabIndex = 40;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_mess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.btn_mess.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_mess.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mess.ForeColor = System.Drawing.Color.Silver;
+            this.btn_mess.Image = ((System.Drawing.Image)(resources.GetObject("btn_mess.Image")));
+            this.btn_mess.Location = new System.Drawing.Point(114, 95);
+            this.btn_mess.Name = "btn_mess";
+            this.btn_mess.Size = new System.Drawing.Size(70, 66);
+            this.btn_mess.TabIndex = 43;
+            this.btn_mess.UseVisualStyleBackColor = false;
+            this.btn_mess.Click += new System.EventHandler(this.btn_mess_Click);
             // 
-            // button2
+            // btn_link
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkOrchid;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Silver;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(140, 300);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 86);
-            this.button2.TabIndex = 39;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_link.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(166)))), ((int)(((byte)(90)))));
+            this.btn_link.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_link.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_link.ForeColor = System.Drawing.Color.Silver;
+            this.btn_link.Image = ((System.Drawing.Image)(resources.GetObject("btn_link.Image")));
+            this.btn_link.Location = new System.Drawing.Point(114, 177);
+            this.btn_link.Name = "btn_link";
+            this.btn_link.Size = new System.Drawing.Size(70, 66);
+            this.btn_link.TabIndex = 42;
+            this.btn_link.UseVisualStyleBackColor = false;
+            this.btn_link.Click += new System.EventHandler(this.btn_link_Click);
             // 
-            // button1
+            // btn_setting
             // 
-            this.button1.BackColor = System.Drawing.Color.Gray;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Silver;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(29, 95);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 86);
-            this.button1.TabIndex = 38;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_setting.BackColor = System.Drawing.Color.Turquoise;
+            this.btn_setting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_setting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_setting.ForeColor = System.Drawing.Color.Silver;
+            this.btn_setting.Image = ((System.Drawing.Image)(resources.GetObject("btn_setting.Image")));
+            this.btn_setting.Location = new System.Drawing.Point(29, 177);
+            this.btn_setting.Name = "btn_setting";
+            this.btn_setting.Size = new System.Drawing.Size(70, 66);
+            this.btn_setting.TabIndex = 41;
+            this.btn_setting.UseVisualStyleBackColor = false;
+            this.btn_setting.Click += new System.EventHandler(this.btn_setting_Click);
+            // 
+            // btn_login
+            // 
+            this.btn_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_login.ForeColor = System.Drawing.Color.Silver;
+            this.btn_login.Image = ((System.Drawing.Image)(resources.GetObject("btn_login.Image")));
+            this.btn_login.Location = new System.Drawing.Point(200, 177);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(70, 66);
+            this.btn_login.TabIndex = 40;
+            this.btn_login.UseVisualStyleBackColor = false;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
+            // 
+            // btn_Logchat
+            // 
+            this.btn_Logchat.BackColor = System.Drawing.Color.DarkOrchid;
+            this.btn_Logchat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Logchat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Logchat.ForeColor = System.Drawing.Color.Silver;
+            this.btn_Logchat.Image = ((System.Drawing.Image)(resources.GetObject("btn_Logchat.Image")));
+            this.btn_Logchat.Location = new System.Drawing.Point(114, 259);
+            this.btn_Logchat.Name = "btn_Logchat";
+            this.btn_Logchat.Size = new System.Drawing.Size(70, 66);
+            this.btn_Logchat.TabIndex = 39;
+            this.btn_Logchat.UseVisualStyleBackColor = false;
+            this.btn_Logchat.Click += new System.EventHandler(this.btn_Logchat_Click);
+            // 
+            // btn_addFriend
+            // 
+            this.btn_addFriend.BackColor = System.Drawing.Color.Gray;
+            this.btn_addFriend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_addFriend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_addFriend.ForeColor = System.Drawing.Color.Silver;
+            this.btn_addFriend.Image = ((System.Drawing.Image)(resources.GetObject("btn_addFriend.Image")));
+            this.btn_addFriend.Location = new System.Drawing.Point(29, 95);
+            this.btn_addFriend.Name = "btn_addFriend";
+            this.btn_addFriend.Size = new System.Drawing.Size(70, 66);
+            this.btn_addFriend.TabIndex = 38;
+            this.btn_addFriend.UseVisualStyleBackColor = false;
+            this.btn_addFriend.Click += new System.EventHandler(this.btn_addFriend_Click);
             // 
             // pictureBox6
             // 
@@ -782,7 +829,7 @@ namespace Lan_Messenger
             this.bunifuSeparator1.LineThickness = 2;
             this.bunifuSeparator1.Location = new System.Drawing.Point(13, 51);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(339, 10);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(275, 10);
             this.bunifuSeparator1.TabIndex = 25;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
@@ -808,49 +855,10 @@ namespace Lan_Messenger
             this.panel3.Size = new System.Drawing.Size(231, 410);
             this.panel3.TabIndex = 9;
             // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.Silver;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(140, 95);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(92, 86);
-            this.button6.TabIndex = 43;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.DarkGray;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.Silver;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(29, 300);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(92, 86);
-            this.button7.TabIndex = 44;
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Tomato;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.ForeColor = System.Drawing.Color.Silver;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(251, 95);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(92, 86);
-            this.button8.TabIndex = 45;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
             // Form1
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(612, 432);
+            this.ClientSize = new System.Drawing.Size(542, 432);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusBar);
@@ -1010,6 +1018,13 @@ namespace Lan_Messenger
             this.notMenuSignOut.Enabled = false;
             tmrMessageReceive.Enabled = false;
             tmrContactUpdate.Enabled = false;
+            //shortcut
+            btn_addFriend.Enabled = false;
+            btn_changePass.Enabled = false;
+            btn_group.Enabled = false;
+            btn_mess.Enabled = false;
+            btn_Logchat.Enabled = false;
+
             SignIn();
 		}
 
@@ -1210,6 +1225,13 @@ namespace Lan_Messenger
                 this.notMenuSignOut.Enabled = false;
                 tmrMessageReceive.Enabled = false;
                 tmrContactUpdate.Enabled = false;
+
+                //shortcut
+                btn_addFriend.Enabled = false;
+                btn_changePass.Enabled = false;
+                btn_group.Enabled = false;
+                btn_mess.Enabled = false;
+                btn_Logchat.Enabled = false;
             }
             finally
             {
@@ -1355,6 +1377,14 @@ namespace Lan_Messenger
             this.notMenuSignOut.Enabled = false;
             tmrMessageReceive.Enabled = false;
             tmrContactUpdate.Enabled = false;
+
+            //shortcut
+            btn_addFriend.Enabled = false;
+            btn_changePass.Enabled = false;
+            btn_group.Enabled = false;
+            btn_mess.Enabled = false;
+            btn_Logchat.Enabled = false;
+
             if (setting[5] == "2")
                 DeleteAllLogs();
 			try
@@ -1457,7 +1487,14 @@ namespace Lan_Messenger
 					this.notMenuSignIn.Text= "Sign in with another account";
 					this.notMenuSignOut.Enabled=true;
 
-					this.UpdatePanelContact();
+                    //shortcut
+                    btn_addFriend.Enabled = true;
+                    btn_changePass.Enabled = true;
+                    btn_group.Enabled = true;
+                    btn_mess.Enabled = true;
+                    btn_Logchat.Enabled = true;
+
+                    this.UpdatePanelContact();
 					break;
 			}
 			notifyIcon.ContextMenu=this.notifyMenu;			
@@ -1483,7 +1520,14 @@ namespace Lan_Messenger
 			this.notMenuSignIn.Text= "Log in";
 			this.notMenuSignOut.Enabled=false;
 
-			ArrayList a = new ArrayList();
+            //shortcut
+            btn_addFriend.Enabled = false;
+            btn_changePass.Enabled = false;
+            btn_group.Enabled = false;
+            btn_mess.Enabled = false;
+            btn_Logchat.Enabled = false;
+
+            ArrayList a = new ArrayList();
 			foreach(string key in Global.windowList.Keys)
 				a.Add(key);
 			foreach(string key in a)
@@ -1644,19 +1688,6 @@ namespace Lan_Messenger
             this.WindowState = FormWindowState.Normal;
         }
 
-        // Mở file help.chm
-        //private void menuItem14_Click(object sender, EventArgs e)
-        //{
-        //    if (File.Exists("help.chm"))
-        //        System.Diagnostics.Process.Start("help.chm");
-        //    else
-        //        MessageBox.Show("Không tìm thấy tệp tin help.chm","Lỗi");
-        //}
-
-
-
-
-
         private void lb_AddFriends_Click(object sender, EventArgs e)
         {
             FormAddContact frmAddContact = new FormAddContact();
@@ -1693,9 +1724,141 @@ namespace Lan_Messenger
             fo.Show();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
 
+        //button shortcut
+
+        private void btn_addFriend_Click(object sender, EventArgs e)
+        {
+            FormAddContact frmAddContact = new FormAddContact();
+            if (frmAddContact.ShowDialog() == DialogResult.OK)
+            {
+                UpdatePanelContact();
+            }
+        }
+
+        private void btn_mess_Click(object sender, EventArgs e)
+        {
+            using (FormSelectContact frmContact = new FormSelectContact())
+            {
+                if (frmContact.ShowDialog(this) == DialogResult.OK)
+                {
+                    if (frmContact.txtContact.Text == Global.username)
+                    {
+                        MessageBox.Show("Bạn không thể gửi tin nhắn tới chính bạn được!");
+                        return;
+                    }
+                    if (Global.windowList.Contains(frmContact.txtContact.Text))
+                    {
+                        ((FormMessage)Global.windowList[frmContact.txtContact.Text]).Focus();
+                    }
+                    else
+                    {
+                        FormMessage frmMessage = new FormMessage();
+                        frmMessage.contact = frmContact.txtContact.Text;
+                        frmMessage.Text = frmContact.txtContact.Text + " - Tin nhắn trực tiếp.";
+                        Global.windowList.Add(frmContact.txtContact.Text, frmMessage);
+                        frmMessage.Show();
+                    }
+                }
+            }
+        }
+
+        private void btn_group_Click(object sender, EventArgs e)
+        {
+            // Khởi tạo kênh liên lạc với remote Object.
+            channelChatRoom = new TcpChannel(7070);
+            ChannelServices.RegisterChannel(channelChatRoom, false);
+
+            // Ở đây sẻ sử dụng Singleton để duy trì trạng thái với nhiều kết nối Client 
+            RemotingConfiguration.RegisterWellKnownServiceType(typeof(SampleObject), Global.username.ToString(), WellKnownObjectMode.Singleton); // Cho Server chat room
+
+            // Mở Room
+            if (OpenRoom() == 0)
+            {
+                ChannelServices.UnregisterChannel(channelChatRoom);
+                channelChatRoom = null;
+            }
+        }
+
+        private void btn_setting_Click(object sender, EventArgs e)
+        {
+            FormOption fo = new FormOption();
+            fo.Show();
+        }
+
+        private void btn_link_Click(object sender, EventArgs e)
+        {
+            FormNetworkSettings frmNetworkSettings = new FormNetworkSettings();
+            frmNetworkSettings.txtIP.Text = hostIP;
+            if (frmNetworkSettings.ShowDialog() == DialogResult.OK)
+            {
+                hostIP = frmNetworkSettings.txtIP.Text;
+                try
+                {
+                    AbortConnection();
+                    MarshalByRefObject obj = (MarshalByRefObject)RemotingServices.Connect(typeof(IServer), "http://" + hostIP + ":9090/Server");
+                    Global.server = obj as IServer;
+                }
+                catch
+                {
+                    AbortConnection();
+                    return;
+                }
+            }
+        }
+
+        private void btn_Logchat_Click(object sender, EventArgs e)
+        {
+            FormLogsReader f = new FormLogsReader();
+            f.Show();
+        }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Global.server.SignOut(Global.username);
+                if (setting[5] == "2")
+                    DeleteAllLogs();
+                pnlContacts.Controls.Clear();
+                Global.contactList.Clear();
+                this.txtSearchName.Enabled = false;
+                rbtnOnline.Enabled = false;
+                rbtnInvisible.Enabled = false;
+                this.txtSearchName.Clear();
+                this.menuAddContact.Enabled = false;
+                this.menuSendMessage.Enabled = false;
+                this.menuRemoveContact.Enabled = false;
+                this.menuLogMessage.Enabled = false;
+                this.menuChangeDisplayName.Enabled = false;
+                this.menuOpenChatRoom.Enabled = false;
+                this.menuJoinRoom.Enabled = false;
+                this.menuChangeUser.Text = "Log in";
+                this.menuSignOut.Enabled = false;
+                this.pnlContacts.ContextMenu = null;
+                this.notMenuSend.Enabled = false;
+                this.notMenuSignIn.Text = "Log in";
+                this.notMenuSignOut.Enabled = false;
+                tmrMessageReceive.Enabled = false;
+                tmrContactUpdate.Enabled = false;
+
+                //shortcut
+                btn_addFriend.Enabled = false;
+                btn_changePass.Enabled = false;
+                btn_group.Enabled = false;
+                btn_mess.Enabled = false;
+                btn_Logchat.Enabled = false;
+            }
+            finally
+            {
+                SignIn();
+            }
+        }
+
+        private void btn_changePass_Click(object sender, EventArgs e)
+        {
+            FormChangePassword fo = new FormChangePassword();
+            fo.Show();
         }
     }
     class Global

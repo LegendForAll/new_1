@@ -37,7 +37,6 @@ namespace Lan_Messenger
         private Panel panel1;
         private PictureBox pictureBox2;
         private Label label3;
-        private Label label6;
         private Label lb_change_pass;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator4;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator3;
@@ -101,7 +100,6 @@ namespace Lan_Messenger
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.lb_change_pass = new System.Windows.Forms.Label();
             this.bunifuSeparator4 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
@@ -326,7 +324,6 @@ namespace Lan_Messenger
             this.panel1.Controls.Add(this.btnSignIn);
             this.panel1.Controls.Add(this.chkInvisible);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.lb_change_pass);
             this.panel1.Controls.Add(this.bunifuSeparator4);
@@ -366,19 +363,6 @@ namespace Lan_Messenger
             this.label3.Text = "Register";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label6
-            // 
-            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PanelTransition.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.label6.ForeColor = System.Drawing.Color.DarkGray;
-            this.label6.Location = new System.Drawing.Point(99, 309);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 23);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Forgot the password?";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lb_change_pass
             // 
@@ -508,15 +492,6 @@ namespace Lan_Messenger
 		}
 		#endregion
 
-		private void btnCreateAccount_Click(object sender, System.EventArgs e)
-		{
-			FormCreateAccount frmCreateAccount = new FormCreateAccount();
-			if(frmCreateAccount.ShowDialog()==DialogResult.OK)
-			{
-				txtUsername.Text=frmCreateAccount.txtUsername.Text;
-				txtPassword.Text=frmCreateAccount.txtPassword.Text;
-			}
-		}
 		private void btnSignIn_Click(object sender, System.EventArgs e)
 		{            
             if (txtUsername.Text != "" && txtPassword.Text != "")
